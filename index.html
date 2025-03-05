@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trần Thanh Có Nên Đi Học?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: inline-block;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #result {
+            font-size: 20px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Trần Thanh có nên đi học hôm nay?</h2>
+        <img src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/476062891_1344003736956195_542642429986897238_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEqEspXtr4SQNwJwrLeHgjNv95dmKIcc_e_3l2Yohxz91x7CGXOK0KQqMfuG62P_vN0MmuSuaO3H9Jn9P-5nkmD&_nc_ohc=H6dr3yuktoQQ7kNvgFDvUGd&_nc_oc=Adjs1mNBhPNns_KXL83wWbwzztSZzv01vr5w84ZKquDJasojJXovtc5SqNHw7l0F_YU&_nc_zt=23&_nc_ht=scontent.fsgn5-5.fna&_nc_gid=Ab6PTQI2-GlHcfnebfeZYOX&oh=00_AYCDFCtIXTofQSeTqh_hNVlfqPfF2LNIzDIBR8dSN2z-5Q&oe=67CDCB81" alt="Avatar">
+        <br>
+        <button onclick="randomDecision()">Xem Kết Quả</button>
+        <p id="result"></p>
+    </div>
+    
+    <script>
+        function randomDecision() {
+            const decisions = ["Có! Đi học chăm chỉ nào!", "Không! Ở nhà nghỉ ngơi đi!"];
+            document.getElementById("result").innerText = decisions[Math.floor(Math.random() * decisions.length)];
+        }
+    </script>
+</body>
+</html>
